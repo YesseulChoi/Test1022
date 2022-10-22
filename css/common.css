@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.cen {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.25);
+    z-index: 10000;
+    position: relative;
+}
+h1 {
+    float: left;
+    margin-top: 16px;
+    margin-right: 30px;
+}
+
+#lnb {
+    float: left;
+}
+
+.main {
+    float: left;
+}
+.main>a {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    padding: 0 20px;
+}
+.main>a:hover {
+    color: #E02CFF;
+}
+.sub {
+    display: none;
+    background-color: #555;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 10000;
+}
+.sub li {
+    display: inline;
+}
+.sub a {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1em;
+}
+.sub a:hover {
+    color: #E08CFF;
+}
+
+.main:hover .sub {
+    display: block;
+}
+
+
+#gnb {
+    float: right;
+    margin-top: 30px;
+}
+#gnb a {
+    color: #666;
+    font-size: 0.8em;
+    padding-left: 0.6em;
+    padding-right: 0.4em;
+    position: relative;
+}
+#gnb a::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 0.9em;
+    background-color: #666;
+    margin-right: -0.4em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+#gnb a:last-of-type::after {
+    content: none;
+}
+#gnb a:hover {
+    text-decoration: underline;
+}
+
+.jaju {
+    color: #E02CFF;
+}
+
+.float-right {
+    float: right;
+}
+
+h3 {
+    font-size: 1.15em;
+    letter-spacing: -0.08em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+
+footer {
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eee;
+    overflow: auto;
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+#footerTxt {
+    float: left;
+    font-size: 0.8em;
+    color: #777;
+}
+
+#footerLink {
+    margin-bottom: 28px;
+    font-size: 0.9em;
+}
+
+#footerLogo {
+    float: right;
+}
+
